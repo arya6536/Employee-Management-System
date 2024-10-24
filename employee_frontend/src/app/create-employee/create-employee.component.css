@@ -1,0 +1,85 @@
+.form-title {
+    text-align: center;
+    color: #333333; /* Dark gray for title */
+    margin-bottom: 20px;
+}
+
+.employee-form {
+    background-color: #292726; /* Dark background for the form */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Reduced shadow intensity */
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto; /* Center the form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    background-color: #ffffff; /* White background for input fields */
+    color: #000000; /* Black text for input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    padding: 10px; /* Add padding for comfort */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.btn-submit {
+    width: 100%; /* Make the button full width */
+    background-color: #716e6b; /* Dark button color */
+    color: #ffffff; /* White text for button */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #a19d9b; 
+    transform: scale(1.05); 
+}
+
+.text {
+    color: #ffffff; /* Set label text color to white */
+}
+
+
+.button-group {
+    display: flex; /* Use Flexbox to align items */
+    justify-content: flex-start; /* Align items to the start (left) */
+    margin-top: 20px; /* Space above buttons */
+}
+
+.btn {
+    margin: 0 5px; /* Add spacing between buttons */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff; /* White text for buttons */
+}
+
+.btn-back {
+    background-color: #444; /* Dark grey background for Back button */
+}
+
+.btn-back:hover {
+    background-color: #555; /* Lighten background on hover */
+}
+
+.btn-submit {
+    background-color: #444; /* Black background for Submit button */
+}
+
+.btn-submit:hover {
+    background-color: #555555; /* Greyish color on hover */
+    color: #ffffff; /* White text remains */
+}

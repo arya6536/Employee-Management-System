@@ -1,0 +1,182 @@
+/* Navbar and footer styling */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(45deg, #000000, #787878);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.fancy-title {
+    font-family: 'Arial', sans-serif; /* You can change this to any font */
+    font-size: 2.5rem; /* Increase the font size */
+    color: #000000; /* Black color for the title */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* White shadow for depth */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+.footer {
+    position:-ms-page;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Content adjustments to prevent overlap */
+body {
+    padding-top: 60px; /* Adjust according to the height of your navbar */
+    padding-bottom: 50px; /* Adjust according to the height of your footer */
+}
+
+/* Rest of the styling */
+.table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #000000; /* Black background for all buttons */
+    color: #ffffff; /* White text for all buttons */
+}
+
+.btn:hover {
+    background-color: #555555; /* Greyish color on hover */
+    color: #ffffff;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+.table tbody tr {
+    transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Smooth transition for effects */
+}
+
+.table tbody tr:hover {
+    transform: scale(1.05); /* Slightly enlarge the row */
+    background-color: #000000; /* Change background to black */
+    color: #ffffff; /* Change text color to white */
+}
+
+.table tbody tr:hover .btn {
+    background-color: #ffffff; /* Change button background to white */
+    color: #000000; /* Change button text to black */
+}
+
+
+.hover-row {
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hover-row:hover {
+    transform: scale(1.1);
+    background-color: #000000; 
+    color: white; 
+}
+
+/* Button Hover Effects */
+.btn {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #000000; 
+    color: #ffffff; 
+    transition: background-color 0.4s, transform 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #555555; /* Greyish color on hover */
+    color: #ffffff; /* White text remains */
+    transform: scale(1.1); /* Enlarge button more significantly on hover */
+}
+
+
+/* Styling for the centered employee card */
+.employee-card-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); /* Start slightly smaller */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3); /* White shadow for effect */
+    text-align: center;
+    z-index: 1000;
+    opacity: 0; /* Start as invisible */
+    animation: fadeInScale 0.5s ease forwards; /* Fade in and scale effect */
+}
+
+/* Styling for each detail section */
+.employee-detail {
+    margin: 20px 0;
+}
+
+.employee-detail label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.employee-detail p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Close button styling */
+.btn-back {
+    background-color: #ffffff; /* White background for the button */
+    color: #000000; /* Black text for the button */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Button hover effect */
+.btn-back:hover {
+    background-color: #555555; /* Greyish color on hover */
+    color: #ffffff; /* White text */
+}
+
+/* Animation for fade-in and scale */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8); /* Start slightly smaller */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1); /* End at normal size */
+    }
+}

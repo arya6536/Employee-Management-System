@@ -1,0 +1,42 @@
+<h2 class="text-center fancy-title">Employees List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Actions</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees" (mouseleave)="hideDetails()">
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.emailId}}</td>
+            <td>
+                <button class="btn btn-update" (click)="updateEmployee(employee.id)">Update</button>
+                <button class="btn btn-delete" (click)="deleteEmployee(employee.id)">Delete</button>
+                <button class="btn btn-view" (mouseenter)="showDetails(employee)">View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<div *ngIf="selectedEmployee" class="employee-card-center">
+    <div class="card-content">
+        <h3>Employee Details</h3>
+        <div class="employee-detail">
+            <label>First Name:</label>
+            <p>{{ selectedEmployee.firstName }}</p>
+        </div>
+        <div class="employee-detail">
+            <label>Last Name:</label>
+            <p>{{ selectedEmployee.lastName }}</p>
+        </div>
+        <div class="employee-detail">
+            <label>Email:</label>
+            <p>{{ selectedEmployee.emailId }}</p>
+        </div>
+    </div>
+</div>

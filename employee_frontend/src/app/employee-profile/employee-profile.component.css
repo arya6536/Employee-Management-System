@@ -1,0 +1,47 @@
+/* Styling for the card container */
+.employee-card {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* White shadow effect */
+    text-align: left;
+}
+
+/* Styling for each detail section */
+.employee-detail {
+    margin: 15px 0;
+}
+
+.employee-detail label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.employee-detail p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Styling for the back button */
+.back-button {
+    background-color: #ffffff; /* White background for the button */
+    color: #000000; /* Black text for the button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #555555; /* Darker background on hover */
+    color: #ffffff; /* White text on hover */
+}

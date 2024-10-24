@@ -1,0 +1,36 @@
+ <h3 class="form-title">Update Employee</h3>
+<form (ngSubmit)="onSubmit()" class="employee-form">
+    <div class="form-group">
+        <div class="text">
+            <label for="firstName">First Name</label>
+        </div>
+        <input type="text" class="form-control" id="firstName"
+            [(ngModel)]="employee.firstName" name="firstName" required 
+            [placeholder]="employee.firstName ? '' : 'Enter your First name'" value="employee.firstName" />
+    </div>
+
+    <div class="form-group">
+        <div class="text">
+            <label for="lastName">Last Name</label>
+        </div>
+        <input type="text" class="form-control" id="lastName"
+            [(ngModel)]="employee.lastName" name="lastName" required 
+            [placeholder]="employee.lastName ? '' : 'Enter your Last name'" />
+    </div>
+
+    <div class="form-group">
+        <div class="text">
+            <label for="emailId">Email ID</label>
+        </div>
+        <input type="email" class="form-control" id="emailId"
+            [(ngModel)]="employee.emailId" name="emailId" required 
+            [placeholder]="employee.emailId ? '' : 'Enter your Email ID'" />
+    </div>
+
+    <div class="button-group">
+        <button class="btn btn-back" type="button" (click)="backPage()">Back</button>
+        <button class="btn btn-submit" type="submit">Submit</button>
+    </div>
+</form> 
+
+
